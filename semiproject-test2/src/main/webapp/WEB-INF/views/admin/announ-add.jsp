@@ -5,7 +5,6 @@
 
 
 
-<jsp:include page="/WEB-INF/views/template/experiment.jsp"></jsp:include>
 
 	
 <!-- summernote cdn -->
@@ -21,27 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
 <script src="/js/summernote-custom.js"></script>
 
-	<form enctype="application/x-www-form-urlencoded"></form>
-    <div class="container w-800">
-        <div class="cell center">
-            <h1>리뷰 작성성</h1>
-        </div>
-        
-        <form action="" method="post">
-        <div class="cell center">
-           
-            <input class="field w-100" type="text" name="" placeholder="제목">
-        </div>
-        
-            <div class="cell my-40">
-            <textarea name="boardContent"></textarea>
-        </div>
-
-        <div class="cell">
-            <button type="submit" class="btn btn-positive w-100">작성하기</button>
-        </div>
-        </form>
-    </div>
+	
 	
 	
 
