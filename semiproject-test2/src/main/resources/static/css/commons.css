@@ -1,0 +1,792 @@
+@charset "UTF-8";
+
+/*
+    자주 사용하는 디자인을 보관해놓고 불러다 쓰는 파일
+*/
+
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/*
+    컨테이너 디자인
+    - 가장 작은 기능에 대한 화면 단위 (ex : 로그인 화면, 등록 화면, 목록 화면, ...)
+    - 기본적으로 가운데 정렬이 되어야 함
+    - 크기는 별도의 옵션으로 지정되도록 하는것이 재사용성이 좋음
+*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+    셀 디자인
+    - 컨테이너 내부의 한 줄(칸)을 의미
+    - 기본적으로 셀끼리는 어느정도 간격이 있어야 하며 조절도 가능
+    - 셀 내부의 요소를 어느 방향으로 배치할 것인지도 지정 가능해야 함
+*/
+.cell {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+    자주 사용하는 폭에 대한 디자인
+    - w-* 형태로 클래스를 구현
+    - 단위는 50px로 설정
+    - 최소 150px부터 1200px까지 구현
+    - 비율로도 설정가능하도록 구현(0~100)
+*/
+.w-20 {
+    width: 20% !important;
+}
+
+.w-25 {
+    width: 25% !important;
+}
+
+.w-33 {
+    width: 33.3333% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-150 {
+    width: 150px !important;
+}
+
+.w-200 {
+    width: 200px !important;
+}
+
+.w-250 {
+    width: 250px !important;
+}
+
+.w-300 {
+    width: 300px !important;
+}
+
+.w-350 {
+    width: 350px !important;
+}
+
+.w-400 {
+    width: 400px !important;
+}
+
+.w-450 {
+    width: 450px !important;
+}
+
+.w-500 {
+    width: 500px !important;
+}
+
+.w-550 {
+    width: 550px !important;
+}
+
+.w-600 {
+    width: 600px !important;
+}
+
+.w-650 {
+    width: 650px !important;
+}
+
+.w-700 {
+    width: 700px !important;
+}
+
+.w-750 {
+    width: 750px !important;
+}
+
+.w-800 {
+    width: 800px !important;
+}
+
+.w-850 {
+    width: 850px !important;
+}
+
+.w-900 {
+    width: 900px !important;
+}
+
+.w-950 {
+    width: 950px !important;
+}
+
+.w-1000 {
+    width: 1000px !important;
+}
+
+.w-1050 {
+    width: 1050px !important;
+}
+
+.w-1100 {
+    width: 1100px !important;
+}
+
+.w-1150 {
+    width: 1150px !important;
+}
+
+.w-1200 {
+    width: 1200px !important;
+}
+
+/*
+    정렬 디자인
+*/
+.left {
+    text-align: left !important;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+/*
+    여백 디자인(margin, padding)
+    - m-*로 마진 부여
+    - p-*로 패딩 부여
+    - 방향 키워드를 추가
+        - t(top), b(bottom), s(left), e(right)
+        - (ex) .ms-20은 margin-left : 20px; 을 의미
+*/
+.m-0 {
+    margin: 0px !important;
+}
+
+.m-10 {
+    margin: 10px !important;
+}
+
+.m-20 {
+    margin: 20px !important;
+}
+
+.m-30 {
+    margin: 30px !important;
+}
+
+.m-40 {
+    margin: 40px !important;
+}
+
+.m-50 {
+    margin: 50px !important;
+}
+
+.mt-0 {
+    margin-top: 0px !important
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.ms-0 {
+    margin-left: 0px !important;
+}
+
+.ms-10 {
+    margin-left: 10px !important;
+}
+
+.ms-20 {
+    margin-left: 20px !important;
+}
+
+.ms-30 {
+    margin-left: 30px !important;
+}
+
+.ms-40 {
+    margin-left: 40px !important;
+}
+
+.ms-50 {
+    margin-left: 50px !important;
+}
+
+.me-0 {
+    margin-right: 0px !important;
+}
+
+.me-10 {
+    margin-right: 10px !important;
+}
+
+.me-20 {
+    margin-right: 20px !important;
+}
+
+.me-30 {
+    margin-right: 30px !important;
+}
+
+.me-40 {
+    margin-right: 40px !important;
+}
+
+.me-50 {
+    margin-right: 50px !important;
+}
+
+.mx-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.mx-10 {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.mx-20 {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.mx-30 {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.mx-40 {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+}
+
+.mx-50 {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+.my-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.my-10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.my-20 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.my-30 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.my-40 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.my-50 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
+
+.p-10 {
+    padding: 10px !important;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-30 {
+    padding: 30px !important;
+}
+
+.p-40 {
+    padding: 40px !important;
+}
+
+.p-50 {
+    padding: 50px !important;
+}
+
+
+/*
+    입력창 디자인
+    - 입력창은 <input>, <select>, <textarea> 세 가지 종류가 존재
+    - <textarea>는 가로 방향의 크기조정(resize)을 금지해야함
+*/
+.field {
+    font-size: 16px;
+    padding: 0.5em 0.75em;
+    outline: none;
+    border: 1px solid #636e72;
+    border-radius: 0.1em;
+}
+
+.field:focus {
+    border-color: #2d3436;
+}
+
+textarea.field {
+    resize: vertical;
+}
+
+/* 확장 입력창(1) - 밑줄만 있는 입력창 */
+.field.field-underline {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* 확장 입력창(2) - 이미지가 들어가는 입력창 */
+.field.field-image {
+    /* background-image: url("./images/magnify.png"); */
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position-x: 0.5em;
+    background-position-y: center;
+    padding-left: 2em;
+}
+
+/*
+    버튼 디자인
+    - 마우스가 올라갈 경우(hover)에 대한 디자인이 필요
+    - a태그도 버튼처럼 만들 수 있어야 함
+    - 역할에 따라 색상을 다르게 부여
+        - 긍정버튼(.btn-positive) - 초록/파랑 계열
+        - 중립버튼(.btn-neutral) - 회색 계열
+        - 부정버튼(.btn-negative) - 붉은색 계열
+*/
+.btn {
+    font-size: 16px;
+    padding: 0.5em 0.75em;
+    color: #2d3436;
+    border: 1px solid #2d3436;
+    border-radius: 0.1em;
+    cursor: pointer;
+    /* a태그를 위한 추가 디자인 */
+    text-decoration: none;
+    background-color: #dfe6e9;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover {
+    filter: brightness(1.05);
+}
+
+/* 긍정 버튼 */
+.btn.btn-positive {
+    border-color: #0984e3;
+    background-color: #0984e3;
+    color: white;
+}
+
+/* 부정 버튼 */
+.btn.btn-negative {
+    border-color: #d63031;
+    background-color: #d63031;
+    color: white;
+}
+
+/* 중립 버튼 */
+.btn.btn-neutral {
+    border-color: #636e72;
+    background-color: #636e72;
+    color: white;
+}
+
+/*
+    입력창과 버튼을 같이 사용하면 높이가 안맞으므로 맞추도록 설정
+    - 단, textarea는 높이를 제한하면 안된다
+    - 선택항목에서 제외할 때는 :not(선택자) 를 사용
+*/
+.field:not(textarea),
+.btn {
+    height: 2.5em;
+    vertical-align: middle;
+}
+
+/*
+    글자 색상 클래스
+    - 색상을 바꾸겠다고 선언하면 다른 색상보다 우선순위가 높아야 함
+    - 선택자가 자세할 수록 우선순위가 높음(대상이 특정될수록 높음)
+    - 속성값 뒤에 !important를 쓰면 우선순위를 강제로 높일 수 있다
+    - 아무때나 쓰면 안됨
+*/
+.red {
+    color: #d63031 !important;
+}
+
+.orange {
+    color: #e17055 !important;
+}
+
+.yellow {
+    color: #fdcb6e !important;
+}
+
+.green {
+    color: #00b894 !important;
+}
+
+.blue {
+    color: #0984e3 !important;
+}
+
+.purple {
+    color: #6c5ce7 !important;
+}
+
+.black {
+    color: #2d3436 !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.grey,
+.gray {
+    color: #636e72 !important;
+}
+
+/*
+            테이블 디자인
+            - 후손 선택자(띄어쓰기)를 이용하거나 자식 선택자( > )를 이용하여 선택
+            - 테이블이 중첩될 수도 있기 때문에 자식 선택자가 더 정확함
+        */
+
+.table {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+
+/* .table th, .table td { */
+.table>thead>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>th,
+.table>tbody>tr>td,
+.table>tfoot>tr>th,
+.table>tfoot>tr>td {
+    padding: 0.25em;
+    font-weight: inherit;
+    /* inherit : 디자인 상속 */
+}
+
+/* 확장 스타일(1) - 기본 테두리 */
+.table.table-border,
+.table.table-border>thead>tr>th,
+.table.table-border>thead>tr>td,
+.table.table-border>tbody>tr>th,
+.table.table-border>tbody>tr>td,
+.table.table-border>tfoot>tr>th,
+.table.table-border>tfoot>tr>td {
+    border: 1px solid #636e72;
+}
+
+/* 확장 스타일(2) - 줄무늬 테이블 */
+.table.table-stripe>thead,
+.table.table-stripe>tbody>tr:nth-child(2n) {
+    background-color: #dfe6e9;
+}
+
+/* 확장 스타일(3) - 마우스 반응 테이블 */
+.table.table-hover>tbody>tr:hover {
+    background-color: #c7cdcf;
+}
+
+/* 확장 스타일(4) - 말줄임표 처리되는 테이블 */
+.table.table-ellipsis>tbody>tr>th,
+.table.table-ellipsis>tbody>tr>td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 
+    페이지 네비게이터 디자인 
+*/
+.page-navigator {
+    text-align: center;
+}
+
+.page-navigator>a {
+    text-decoration: none;
+    color: #636e72;
+    font-size: 16px;
+    padding: 0.5em;
+    display: inline-block;
+    min-width: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    /* border: 1px solid transparent; */
+}
+
+.page-navigator>a:hover,
+.page-navigator>a.on {
+    /* border: 1px solid #636e72; */
+    box-shadow: 0 0 2px 0 #0984e3;
+    color: #0984e3;
+}
+
+/*
+    float box 디자인
+    - 가상 선택자(virtual selector)를 이용해서 영역의 끝 지점을 생성
+    - 시작 지점(::before) , 끝 지점(::after)을 생성할 수 있음
+    - 원래 없는 영역이기 때문에 생성을 위해서 내용물을 작성해야함
+*/
+.float-box::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-box>.float-left {
+    float: left;
+}
+
+.float-box>.float-right {
+    float: right;
+}
+
+/*
+            Flexible layout 디자인
+        */
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.inline-flex-box {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.flex-box.flex-vertical,
+.inline-flex-box.flex-vertical {
+    flex-direction: column;
+}
+
+.flex-box.flex-center,
+.inline-flex-box.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box>.flex-fill,
+.inline-flex-box>.flex-fill {
+    flex-grow: 1;
+}
+
+/*
+            계층형 구조 디자인
+            - 똑같은 요소가 중첩되는 형태를 계층형 구조라고 부름(ex : 답변형 게시판)
+            - ul과 li의 디자인을 개조해서 사용
+
+            (1) ul의 점과 여백을 제거
+            (2) 1차메뉴를 가로로 배치(display:flex)
+            (3) 메뉴를 동일한 폭으로 배치하고 링크 스타일을 제거
+            (4) 메뉴와 항목에 색상 부여
+            (5) 2차 메뉴 이상을 숨기고 메뉴항목에 마우스가 올라가면 하위요소를 표시
+            (6) 2차 메뉴 이상은 position을 absolute로 변경하고 모든 항목을 relative로 변경
+            (7) 3차 메뉴부터는 아래가 아니라 우측으로 펼쳐지도록 구현
+            (8) .menu-right가 붙은 메뉴들을 우측으로 정렬하도록 처리(1차메뉴만)
+            (9) 우측 정렬된 메뉴들의 3차메뉴부터는 좌측으로 펼쳐지도록 구현
+        */
+
+/* (1) */
+.menu,
+/* 1차메뉴 */
+.menu ul
+
+/* 2차이상메뉴*/
+    {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* (2) */
+.menu {
+    display: flex;
+}
+
+/* (3) */
+.menu li {
+    /* 모든 메뉴 항목 */
+    width: 150px;
+}
+
+.menu a {
+    color: inherit;
+    /* 외부 색상을 따라가도록 설정 */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+/* (4) */
+.menu,
+.menu ul {
+    background-color: #dfe6e9;
+}
+
+.menu li:hover {
+    background-color: #b2bec3
+}
+
+/* (5) */
+.menu ul {
+    /* 모든 하위 메뉴를 숨김 */
+    display: none;
+}
+
+.menu li:hover>ul {
+    /* 마우스가 올라간 li태그 안의 ul을 표시 */
+    display: block;
+}
+
+/* (6) */
+.menu li {
+    position: relative;
+}
+
+.menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* (7) */
+.menu>li>ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* (8) */
+.menu>.menu-end {
+    margin-left: auto;
+}
+
+/* (9) */
+.menu>li.menu-end>ul ul,
+.menu>li.menu-end~li>ul ul {
+    top: 0;
+    left: auto;
+    right: 100%;
+}
+
+
+/*
+    입력폼 디자인(feat. 자바스크립트)
+    - 모든 입력창은 .field 클래스를 가진다
+    - 입력창 뒤에는 성공과 실패에 대한 피드백 메세지 태그가 존재
+        - 성공 시 .success-feedback이 출력
+        - 실패 시 .fail-feedback이 출력
+    - 이 모든 작업의 주인공은 입력창이므로 입력창에 성공/실패 표시
+        - 성공 시 .success를 추가
+        - 실패 시 .fail을 추가
+*/
+.success-feedback {
+    color: #0984e3;
+    display: none;
+}
+
+.fail-feedback,
+.fail2-feedback {
+    color: #d63031;
+    display: none;
+}
+
+.field.success {
+    border-color: #0984e3;
+}
+
+.field.fail,
+.field.fail2 {
+    border-color: #d63031;
+}
+
+.field.success~.success-feedback,
+.field.fail~.fail-feedback,
+.field.fail2~.fail2-feedback {
+    display: block;
+}

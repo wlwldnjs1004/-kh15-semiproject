@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+
+/* 테스트를 위해 영역을 시각화하는 코드 */
+div, span, label {
+    box-shadow: 0 0 0 1px #b2bec3;
+}
